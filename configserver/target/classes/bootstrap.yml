@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: config-server
+ # profiles:
+ #   active: native # “native” profile in the Config Server that does not use Git but loads the config files from the local classpath or file system
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/emreokumus/ShoppingSystemConfigRepo.git
+          username: ${CONFIG_GIT_USERNAME}
+          password: ${CONFIG_GIT_PASSWORD}
+          cloneOnStart: true # Başlangıcında repoyu verify eder sorun olup olmadığına dair.
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -1,0 +1,11 @@
+/Users/eokumus/Desktop/ShoppingSystem/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/entity/Product.java
+/Users/eokumus/Desktop/ShoppingSystem/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/controller/ShoppingCardController.java
+/Users/eokumus/Desktop/ShoppingSystem/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.java
+/Users/eokumus/Desktop/ShoppingSystem/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/repository/ProductRepository.java
+/Users/eokumus/Desktop/ShoppingSystem/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/entity/ShoppingCard.java
+/Users/eokumus/Desktop/ShoppingSystem/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/exceptions/AvailableCardException.java
+/Users/eokumus/Desktop/ShoppingSystem/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/ShoppingCardServiceApplication.java
+/Users/eokumus/Desktop/ShoppingSystem/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/repository/ShoppingCardRepository.java
+/Users/eokumus/Desktop/ShoppingSystem/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/service/ShoppingCardService.java
+/Users/eokumus/Desktop/ShoppingSystem/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/exceptions/ShoppingCardNotFoundException.java
+/Users/eokumus/Desktop/ShoppingSystem/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/config/RestTemplateConfiguration.java

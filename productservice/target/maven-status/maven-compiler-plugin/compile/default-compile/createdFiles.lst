@@ -1,0 +1,7 @@
+com/springcloud/shoppingsystem/service/ProductService.class
+com/springcloud/shoppingsystem/entity/Product$ProductBuilder.class
+com/springcloud/shoppingsystem/repository/ProductRepository.class
+com/springcloud/shoppingsystem/service/ProductServiceImpl.class
+com/springcloud/shoppingsystem/ProductServiceApplication.class
+com/springcloud/shoppingsystem/controller/ProductController.class
+com/springcloud/shoppingsystem/entity/Product.class
