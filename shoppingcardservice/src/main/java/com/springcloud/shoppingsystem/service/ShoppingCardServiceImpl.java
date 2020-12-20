@@ -46,8 +46,8 @@ public class ShoppingCardServiceImpl implements ShoppingCardService {
 
         //Tüm ürünleri mevcut ürünlerede ekleyıp tekrar setleyip kaydeder
         Set<Product> newProducts=new HashSet<>(products);
-        /*Set<Product> allProducts = Stream.of(newProducts, shoppingCard.getProducts()).flatMap(Set::stream)
-                .collect(toSet());*/
+        Set<Product> allProducts = Stream.of(newProducts, shoppingCard.getProducts()).flatMap(Set::stream)
+                .collect(toSet());
         shoppingCard.setProducts(newProducts);
         return shoppingCardRepository.save(shoppingCard);
     }
