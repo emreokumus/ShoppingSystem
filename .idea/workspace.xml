@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca37a28b-b5d5-429c-a9ed-446350d0c23d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/service/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/service/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/service/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/controller/ShoppingCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/controller/ShoppingCardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/classes/com/springcloud/shoppingsystem/controller/ShoppingCardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/classes/com/springcloud/shoppingsystem/controller/ShoppingCardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/classes/com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/classes/com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/shoppingcardservice-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/shoppingcardservice-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/shoppingcardservice-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/shoppingcardservice-1.0-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +65,11 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.springcloud.shoppingsystem.dto" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -129,7 +148,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608305494189</updated>
-      <workItem from="1608305498176" duration="43800000" />
+      <workItem from="1608305498176" duration="52001000" />
     </task>
     <servers />
   </component>
@@ -152,17 +171,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/controller/ShoppingCardController.java</url>
-          <line>46</line>
+          <line>49</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/controller/ShoppingCardController.java</url>
-          <line>35</line>
+          <line>36</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.java</url>
-          <line>64</line>
+          <line>76</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -170,13 +189,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="17" />
+          <line>49</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/controller/ProductController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/service/ProductServiceImpl.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

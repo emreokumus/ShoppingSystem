@@ -10,15 +10,15 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class ProductServiceImpl implements ProductService{
+public class ProductServiceImpl implements ProductService {
     @Autowired
     private ProductRepository productRepository;
 
     @Override
-    public Product productTotalPriceByID(Long id,Integer count) throws RuntimeException {
-        Product product=productRepository.findById(id)
+    public Product productTotalPriceByID(Long id, Integer count) throws RuntimeException {
+        Product product = productRepository.findById(id)
                 .orElseThrow(() -> new ProductNotFoundException("Element not found by id!"));
-        product.setPrice(product.getPrice()*count);
+        product.setPrice(product.getPrice() * count);
         return product;
     }
 
@@ -35,11 +35,15 @@ public class ProductServiceImpl implements ProductService{
 
     @Override
     public Product save(Product product) {
-        if(!productRepository.existsProductByNameEqualsAndPriceNot(product.getName(),product.getPrice())){
+        if (productRepository.existsProductByName(product.getName())==false) {
             return productRepository.save(product);
-        }else {
-            throw new AvailableProductFound("Product exist with different price. It's not possible");
+        } else {
+            throw new AvailableProductFound("Product exist in system!");
         }
+    }
 
+    @Override
+    public boolean checkProduct(Long id, String name) {
+        return productRepository.existsProductByIdAndName(id, name);
     }
 }

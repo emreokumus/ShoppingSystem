@@ -1,5 +1,6 @@
 package com.springcloud.shoppingsystem.controller;
 
+import com.springcloud.shoppingsystem.dto.ProductStockDto;
 import com.springcloud.shoppingsystem.entity.Product;
 import com.springcloud.shoppingsystem.exceptions.AvailableProductFound;
 import com.springcloud.shoppingsystem.exceptions.ProductNotFoundException;
@@ -62,7 +63,17 @@ public class ProductController {
         {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
+    }
 
-
+    @RequestMapping(method = RequestMethod.POST,value="checkProduct")
+    public ResponseEntity<?> checkProduct(@RequestBody Product product){
+        try {
+            ProductStockDto productStockDto=new ProductStockDto();
+            productStockDto.setProductAvailable(productService.checkProduct(product.getId(), product.getName()));
+            return ResponseEntity.ok(productStockDto);
+        }catch (Exception ex)
+        {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ex.getMessage());
+        }
     }
 }

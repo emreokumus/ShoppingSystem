@@ -2,10 +2,12 @@ com/springcloud/shoppingsystem/config/RestTemplateConfiguration.class
 com/springcloud/shoppingsystem/repository/ShoppingCardRepository.class
 com/springcloud/shoppingsystem/entity/Product$ProductBuilder.class
 com/springcloud/shoppingsystem/entity/ShoppingCard$ShoppingCardBuilder.class
+com/springcloud/shoppingsystem/exceptions/AvailableProductNotFoundException.class
 com/springcloud/shoppingsystem/entity/Product.class
 com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.class
 com/springcloud/shoppingsystem/ShoppingCardServiceApplication.class
 com/springcloud/shoppingsystem/controller/ShoppingCardController.class
+com/springcloud/shoppingsystem/dto/ProductStockDto.class
 com/springcloud/shoppingsystem/repository/ProductRepository.class
 com/springcloud/shoppingsystem/exceptions/ShoppingCardNotFoundException.class
 com/springcloud/shoppingsystem/exceptions/AvailableCardException.class

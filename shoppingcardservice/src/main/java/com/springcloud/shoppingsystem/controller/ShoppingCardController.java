@@ -3,6 +3,7 @@ package com.springcloud.shoppingsystem.controller;
 import com.springcloud.shoppingsystem.entity.Product;
 import com.springcloud.shoppingsystem.entity.ShoppingCard;
 import com.springcloud.shoppingsystem.exceptions.AvailableCardException;
+import com.springcloud.shoppingsystem.exceptions.AvailableProductNotFoundException;
 import com.springcloud.shoppingsystem.exceptions.ShoppingCardNotFoundException;
 import com.springcloud.shoppingsystem.service.ShoppingCardService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,8 +35,10 @@ public class ShoppingCardController {
     public ResponseEntity<?> addProducts(@PathVariable("id") Long shoppingCardId, @RequestBody List<Product> products){
         try{
             return ResponseEntity.ok(shoppingCardService.addProducts(shoppingCardId,products));
-        }catch (ShoppingCardNotFoundException ex){
+        }catch (ShoppingCardNotFoundException ex) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
+        } catch (AvailableProductNotFoundException ex){
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
         }catch (Exception ex){
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }

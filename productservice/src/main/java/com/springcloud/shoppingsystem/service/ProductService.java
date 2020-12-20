@@ -9,5 +9,6 @@ public interface ProductService {
     Product productByID(Long id);
     List<Product> listAllProducts();
     Product save(Product product);
+    boolean checkProduct(Long id,String name);
 
 }

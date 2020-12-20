@@ -1,8 +1,11 @@
 package com.springcloud.shoppingsystem.service;
 
+import com.springcloud.shoppingsystem.dto.ProductDto;
+import com.springcloud.shoppingsystem.dto.ProductStockDto;
 import com.springcloud.shoppingsystem.entity.Product;
 import com.springcloud.shoppingsystem.entity.ShoppingCard;
 import com.springcloud.shoppingsystem.exceptions.AvailableCardException;
+import com.springcloud.shoppingsystem.exceptions.AvailableProductNotFoundException;
 import com.springcloud.shoppingsystem.exceptions.ShoppingCardNotFoundException;
 import com.springcloud.shoppingsystem.repository.ProductRepository;
 import com.springcloud.shoppingsystem.repository.ShoppingCardRepository;
@@ -35,14 +38,24 @@ public class ShoppingCardServiceImpl implements ShoppingCardService {
     }
 
     @Override
-    public ShoppingCard addProducts(Long shoppingCardId, List<Product> products) throws ShoppingCardNotFoundException {
+    public ShoppingCard addProducts(Long shoppingCardId, List<Product> products) throws ShoppingCardNotFoundException, AvailableProductNotFoundException {
         ShoppingCard shoppingCard=
                 shoppingCardRepository
                         .findById(shoppingCardId)
                         .orElseThrow(()-> new ShoppingCardNotFoundException("Verilen id ile eşleşen 'Shopping Card' bulunamadı."));//Unchecked exception
 
-        //Productları kaydeder.
-        products.forEach(product -> productRepository.saveAndFlush(product));
+        //Product service üzerinde mevcut ise kaydeder.
+        products.stream().forEach(product -> {
+            //Map<String, Boolean> isAvailable = restTemplate.postForObject("http://localhost:8082/api/p/product/checkProduct", product, HashMap.class);
+            //ProductDto result=restTemplate.postForObject("http://localhost:8082/api/p/product/checkProduct",product, ProductDto.class);
+            ProductStockDto result=restTemplate.postForObject("http://localhost:8082/api/p/product/checkProduct",product, ProductStockDto.class);
+            //if(isAvailable.get("productAvailable")==true){
+            if(result.isProductAvailable()==true){
+                productRepository.saveAndFlush(product);
+            }else{
+                throw new AvailableProductNotFoundException("Böyle bir ürün bulunmamaktadır.");
+            }
+        });
 
         //Tüm ürünleri mevcut ürünlerede ekleyıp tekrar setleyip kaydeder
         Set<Product> newProducts=new HashSet<>(products);
@@ -59,7 +72,6 @@ public class ShoppingCardServiceImpl implements ShoppingCardService {
         ShoppingCard shoppingCard= shoppingCardRepository
                 .findById(shoppingCardId)
                 .orElseThrow(()->new ShoppingCardNotFoundException("Verilen id ile eşleşen 'Shopping Card' bulunamadı."));//Unchecked exception
-        RestTemplate restTemplate =new RestTemplate();
 
         int totalPrice= shoppingCard.getProducts().stream()//Product Stream
                 .map(product -> restTemplate.getForObject("http://localhost:8082/api/p/product/"+product.getId()+"/"+product.getCount(), HashMap.class)) //HashMap stream'im var.
