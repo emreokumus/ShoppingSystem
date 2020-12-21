@@ -3,22 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca37a28b-b5d5-429c-a9ed-446350d0c23d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/service/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/repository/ProductRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/service/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/service/ProductServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/controller/ShoppingCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/controller/ShoppingCardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/classes/com/springcloud/shoppingsystem/controller/ShoppingCardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/classes/com/springcloud/shoppingsystem/controller/ShoppingCardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/classes/com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/classes/com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/shoppingcardservice-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/shoppingcardservice-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/shoppingcardservice-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/shoppingcardservice-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/dto/ProductDto.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +133,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608305494189</updated>
-      <workItem from="1608305498176" duration="52001000" />
+      <workItem from="1608305498176" duration="52192000" />
     </task>
     <servers />
   </component>
