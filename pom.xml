@@ -14,6 +14,7 @@
         <module>zuulapigateway</module>
         <module>productservice</module>
         <module>shoppingcardservice</module>
+        <module>zipkinserver</module>
     </modules>
 
 

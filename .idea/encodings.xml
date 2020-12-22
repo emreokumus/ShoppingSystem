@@ -6,6 +6,7 @@
     <file url="file://$PROJECT_DIR$/eurekaserver" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/productservice" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shoppingcardservice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkinserver" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zuulapigateway" charset="UTF-8" />
   </component>
 </project>

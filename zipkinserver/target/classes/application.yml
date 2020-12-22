@@ -1,0 +1,15 @@
+server:
+  port: 9411
+
+spring:
+  application:
+    name: zipkin-server
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+zipkin:
+  ui:
+    basepath: /api/tracing/zipkin

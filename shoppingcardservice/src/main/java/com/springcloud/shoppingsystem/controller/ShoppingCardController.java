@@ -6,6 +6,8 @@ import com.springcloud.shoppingsystem.exceptions.AvailableCardException;
 import com.springcloud.shoppingsystem.exceptions.AvailableProductNotFoundException;
 import com.springcloud.shoppingsystem.exceptions.ShoppingCardNotFoundException;
 import com.springcloud.shoppingsystem.service.ShoppingCardService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,8 +21,11 @@ public class ShoppingCardController {
     @Autowired
     private ShoppingCardService shoppingCardService;
 
+    private static Logger log = LoggerFactory.getLogger(ShoppingCardController.class);
+
     @RequestMapping(method = RequestMethod.POST,value = "createShoppingCard")
     public ResponseEntity<?> create(@RequestBody ShoppingCard shoppingCard){
+        log.info("POST shoppingCard/createShoppingCard"); //sleuth-zipkin
         try {
             ShoppingCard createdShoppingCard = shoppingCardService.create(shoppingCard);
             return ResponseEntity.ok(createdShoppingCard);
@@ -33,6 +38,7 @@ public class ShoppingCardController {
 
     @RequestMapping(method = RequestMethod.POST,value = "addProducts/{id}")
     public ResponseEntity<?> addProducts(@PathVariable("id") Long shoppingCardId, @RequestBody List<Product> products){
+        log.info("POST shoppingCard/addProducts/"+shoppingCardId); //sleuth-zipkin
         try{
             return ResponseEntity.ok(shoppingCardService.addProducts(shoppingCardId,products));
         }catch (ShoppingCardNotFoundException ex) {
@@ -46,6 +52,7 @@ public class ShoppingCardController {
 
     @RequestMapping(method = RequestMethod.GET,value = "getShoppingCardTotalPrice/{id}")
     public ResponseEntity<?> shoppingCardTotalPrice(@PathVariable("id") Long shoppingCardId){
+        log.info("GET shoppingCard/getShoppingCardTotalPrice/"+shoppingCardId); //sleuth-zipkin
         try{
             return ResponseEntity.ok(shoppingCardService.getShoppingCardTotalPrice(shoppingCardId));
         }catch (ShoppingCardNotFoundException ex){
