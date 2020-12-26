@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca37a28b-b5d5-429c-a9ed-446350d0c23d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/zipkinserver/zipkinserver.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/java/com/springcloud/shoppingsystem/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/target/classes/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/service/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/target/classes/com/springcloud/shoppingsystem/service/ProductServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/controller/ShoppingCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/src/main/java/com/springcloud/shoppingsystem/controller/ShoppingCardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/classes/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/classes/com/springcloud/shoppingsystem/controller/ShoppingCardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/classes/com/springcloud/shoppingsystem/controller/ShoppingCardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/classes/com/springcloud/shoppingsystem/dto/ProductDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/classes/com/springcloud/shoppingsystem/dto/ProductDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcardservice/target/classes/com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcardservice/target/classes/com/springcloud/shoppingsystem/service/ShoppingCardServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuulapigateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuulapigateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuulapigateway/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuulapigateway/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zipkinserver/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zipkinserver/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ZipkinServerApplication">
+  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="configserver" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.springcloud.shoppingsystem.ConfigServerApplication" />
@@ -160,7 +143,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608305494189</updated>
-      <workItem from="1608305498176" duration="64592000" />
+      <workItem from="1608305498176" duration="66798000" />
+      <workItem from="1608990251242" duration="44000" />
     </task>
     <servers />
   </component>
@@ -172,7 +156,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
